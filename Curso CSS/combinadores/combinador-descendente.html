@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador descendente</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        li li {
+            color: green;
+        }
+
+        #lista-1 li {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .fundo-verde li {
+            background-color: aquamarine;
+        }
+
+        .fundo-azul li {
+            background-color: blue;
+        }
+
+        .fundo-verde #sublista-1 li {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-1">
+            <div>Item 1</div>
+            <ul id="sublista-1">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-2">
+            <div>Item 2</div>
+            <ul id="sublista-2">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-3">
+            <div>Item 3</div>
+            <ul id="sublista-3">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

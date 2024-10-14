@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid blue;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain {
+            object-fit: contain;
+        }
+
+        #cover {
+            object-fit: cover;
+            object-position: 30px 40px;
+        }
+
+        #none {
+            object-fit: none;
+        }
+
+        #scale-down {
+            object-fit: scale-down;
+        }
+
+    </style>
+    <title>Imagem</title>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code> e <code>object-position</code></h1>
+
+    <code>object-fit: fill;</code> (padrao)
+    <div>
+        <img src="https://i.pinimg.com/550x/69/a3/a3/69a3a3eb633c09d3e60a72a6f04cadba.jpg" alt="" id="fill">
+    </div>
+
+    <code>object-fit: contain;</code>
+    <div>
+        <img src="https://i.pinimg.com/550x/69/a3/a3/69a3a3eb633c09d3e60a72a6f04cadba.jpg" alt="" id="contain">
+    </div>
+
+    <code>object-fit: cover;</code> <span>e</span> <code>object-position: 30px 40px;</code>
+    <div>
+        <img src="https://i.pinimg.com/550x/69/a3/a3/69a3a3eb633c09d3e60a72a6f04cadba.jpg" alt="" id="cover">
+    </div>
+
+    <code>object-fit: none;</code>
+    <div>
+        <img src="https://i.pinimg.com/550x/69/a3/a3/69a3a3eb633c09d3e60a72a6f04cadba.jpg" alt="" id="none">
+    </div>
+
+    <code>object-fit: scale-down;</code>
+    <div>
+        <img src="https://i.pinimg.com/550x/69/a3/a3/69a3a3eb633c09d3e60a72a6f04cadba.jpg" alt="" id="scale-down">
+    </div>
+</body>
+</html>

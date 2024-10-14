@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por Atributo</title>
+    <style>
+        [title] {
+            color: red;
+        }
+
+        [title="Netflix"]{
+            color: blue;
+        }
+
+        [title~="Streaming"] {
+            color: green;
+        }
+
+        [title|="Audio"] {
+            color: pink;
+        }
+
+        [href^="http://"] {
+            background-color: aqua;
+        }
+
+        [href$=".com.br"] {
+            background-color: purple;
+        }
+
+        [href*=gigabite] {
+            background-color: rgb(128, 87, 0);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a title="Netflix" href="#">Netflix</a></li>
+            <li><a title="Streaming Prime Video" href="#">Prime Video</a></li>
+            <li><a title="Audio-Spotify" href="#">Spotify</a></li>
+            <li><a title="Google" href="http://#">Google</a></li>
+            <li><a title="Yahoo" href="http://a.com.br">Yahoo</a></li>
+            <li><a title="Gigabite" href="http://a.gigabite.com.br">Gigabite</a></li>
+        </ul>
+    </div>
+</body>
+</html>
